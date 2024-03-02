@@ -61,6 +61,9 @@ namespace PotatoOptimizer
                         
                     }
                 }
+                int maxTextureSize = 64; // Change this to your desired resolution
+                
+                
                 cleaned = true;
             }
 
@@ -82,7 +85,18 @@ namespace PotatoOptimizer
             {
                 light.enabled = false;
             }
+            QualitySettings.antiAliasing = 0;
+            QualitySettings.anisotropicFiltering = 0;
+            QualitySettings.masterTextureLimit = 0;
+            QualitySettings.SetQualityLevel(0);
+            QualitySettings.maximumLODLevel = 0;
+            QualitySettings.particleRaycastBudget = 0;
+            QualitySettings.shadowDistance = 0;
+            QualitySettings.shadowResolution = ShadowResolution.Low;
+            QualitySettings.shadowCascades = 0;
             QualitySettings.shadows = ShadowQuality.Disable;
+            QualitySettings.softParticles = false;
+            QualitySettings.pixelLightCount = 0;
         }
         public void cleanbyname(string name)
         {
