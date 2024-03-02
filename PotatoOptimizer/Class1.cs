@@ -28,7 +28,6 @@ namespace PotatoOptimizer
             
             if(!cleaned && !IsInMenu)
             {
-                cleanbytag("civil");
                 cleanbytag("thief");
                 cleanbytag("trash");
                 cleanbyname("bench");
