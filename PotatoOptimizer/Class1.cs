@@ -30,13 +30,22 @@ namespace PotatoOptimizer
             {
                 cleanbytag("civil");
                 cleanbytag("thief");
-                cleanbytag("doorlock");
-                //cleanbytag("door");
                 cleanbytag("trash");
-                //cleanbyname("bench");
-                //cleanbyname("fence");
+                cleanbyname("bench");
                 cleanbyname("police");
-                //cleanbyname("dumpster");
+                cleanbyname("saleman");
+                cleanbyname("wooden_crate");
+                cleanbyname("plasticcover");
+                cleanbyname("homeless");
+                //cleanbyname("metalbars");
+                cleanbyname("dumpster");
+                cleanbyname("trashcan");
+                cleanbyname("paper");
+                cleanbyname("cart");
+                cleanbyname("Cardboard");
+                cleanbyname("Door_metal");
+                cleanbyname("gargabebag");
+                cleanbyname("pallete");
                 foreach(var shadow in GameObject.FindObjectsOfType<Shader>())
                 {
                     shadow.maximumLOD = 0;
